@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'FuseBall'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A3CAA2DC13154A068DBC014AA4C60A7C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_339C65E220F443F5901AD5E7593A04FF }}
           package: '*.jar'
