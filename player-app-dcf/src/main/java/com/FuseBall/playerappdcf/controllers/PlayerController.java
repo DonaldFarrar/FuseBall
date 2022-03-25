@@ -6,6 +6,8 @@ import com.FuseBall.playerappdcf.repository.PlayerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -20,8 +22,8 @@ public class PlayerController {
         return playerRepo.save(player);
     }
 
-    @GetMapping("/{jerseyNum}")
-    public Player getPlayer(@PathVariable("jerseyNum") Integer jerseyNum){
-        return playerRepo.findById(jerseyNum).get();
+    @GetMapping("/{name}")
+    public List<Player> getPlayer(@PathVariable("name") String name){
+        return playerRepo.findByName(name);
     }
 }
