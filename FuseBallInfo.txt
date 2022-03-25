@@ -1,0 +1,12 @@
+Fuseball app info:
+
+username: fuseBall009
+password: pasword1234!
+
+Commands: 
+psql --host=<servername> --port=<port> --username=<user@servername> --dbname=<dbname>
+psql --host=db-fuseball-dcf.postgres.database.azure.com --port=5432 --username=fuseBall009@db-fuseball-dcf --dbname=postgres
+
+
+Tutorial Link: 
+https://docs.microsoft.com/en-us/azure/postgresql/tutorial-design-database-using-azure-portal
